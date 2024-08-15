@@ -1,0 +1,123 @@
+/* Custom CSS */
+
+/* Navigation Bar */
+.navbar .logo-img {
+    width: 50px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #343a40;
+    padding-top: 20px;
+}
+
+.sidebar .nav-link {
+    color: white;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff;
+}
+
+/* Content Styling */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Customer Support Button */
+.customer-support {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.customer-support .btn {
+    padding: 10px 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer ul li a {
+    color: white;
+    font-size: 24px;
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .navbar .navbar-brand img {
+        width: 40px;
+    }
+}
+
+.grid-item {
+    font-size: 1.5rem;
+    background-color: rgb(147, 218, 55);
+    padding: 1rem;margin-top: 10fr;}
+
+    .glow {
+        font-size: 40px;
+        color: #33094e;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #940a0a, 0 0 20px #fff, 0 0 30px #2f70c4, 0 0 40px #86692bad, 0 0 50px #0ca7e4, 0 0 60px #3c03a5, 0 0 70px #5db451;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #830567, 0 0 40px #ddcad3, 0 0 50px #ff4da6, 0 0 60px #220413, 0 0 70px #700339, 0 0 80px #ff4da6;
+        }
+      }
+
+
+      .img-eye {background-image: url(https://media.istockphoto.com/id/1847548352/photo/pink-blue-clouds-at-sunset-cloudy-air-flying-in-the-sky-landscape-sky-at-dawn-3d-render.webp?b=1&s=612x612&w=0&k=20&c=WHX-mkAtqbfLek0jtoHbi34eE_VobM3DMb4WUedcoNM=); height: 800px; 
+        position: relative;
+        background-position: center;
+        background-repeat: no repeat;
+        background-size: cover;
+    }
+
+
+
+
+
