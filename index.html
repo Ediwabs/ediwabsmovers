@@ -115,67 +115,113 @@
 
                 <h1 class="display-4" class="glow" class="grid-item">Ediwabs Movers</h1>
                 <p class="lead">Your trusted partner for a seamless moving experience.</p>
-                <a href="#quote" class="btn btn-primary btn-lg">Request a Quote</a>
-                
-                
+                <button type="button"  class="glow" class="grid-item" class="btn btn-info" >  <h2> <a href="#quote">Request a QUOTE</a></h2></button>
+  
             </div>
+        
         </section>
 
-        <!-- Request a Quote Section -->
-        <section id="quote" class="section quote-section bg-light">
-            <div class="container">
-            <button type="button"  class="glow" class="grid-item" class="btn btn-info" >  <h2> <a href="#quote">Request a QUOTE</a></h2></button>
-                <form id="quoteForm" action="mailto:ediwabs@ediwabsmovers.com" method="POST" enctype="text/plain">
-                    
 
-                        <div class="form-group col-md-6">
-                            <label for="inputName">Full Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputNEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email" required>
-                        </div>
 
-                    <div class="form-group col-md-6">
-                        <label for="inputPhoneNumber">phone-number</label>
-                        <input type="phone-number" class="form-control" id="inputPhoneNumber" placeholder="Your phone-number" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputDate">Move Date</label>
-                        <input type="Move-Date" class="form-control" id="inputDate" placeholder="Your Date" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputNumber">Number of Bedrooms</label>
-                        <input type="PhoneNumber" class="form-control" id="inputPhoneNumber" placeholder="Your Number" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputAddress">Move From Address</label>
-                        <input type="Address" class="form-control" id="inputAddress" placeholder="Your Address" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputAddress">Move to Address</label>
-                        <input type="Address" class="form-control" id="inputAddress" placeholder="Your Address" required>
-                    </div>
+        
+<!-- Request a Quote Section -->
+        <div class="container mt-5">
+            
+            <form id="supportForm" onsubmit="submitForm(); return false;">
+                <div class="form-group col-md-6">
+                    <label for="customerName">Name</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="customerEmail">Email</label>
+                    <input type="email" class="form-control" id="customerEmail" placeholder="Your Email" required>
+                </div>
 
-                    <div class="form-group">
-                        <label for="inputService">Service Required</label>
-                        <select id="inputService" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>Residential Moving</option>
-                            <option>Commercial Moving</option>
-                            <option>Packing Services</option>
-                            <option>Storage Solutions</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputDetails">Additional Details</label>
-                        <textarea class="form-control" id="inputDetails" rows="5" placeholder="Any specific details?" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit Quote Request</button>
-                </form>
-            </div>
-        </section>
+
+     <div class="form-group col-md-6">
+    <label for="customerPhoneNumber">phone-number</label>
+    <input type="phone-number" class="form-control" id="customerPhoneNumber" placeholder="Your phone-number" required>
+</div>
+<div class="form-group col-md-6">
+    <label for="customerMoveDate">Move Date</label>
+    <input type="Move-Date" class="form-control" id="customerMoveDate" placeholder="Your Date" required>
+</div>
+<div class="form-group col-md-6">
+    <label for="customerNumberOfBedrooms">Number of Bedrooms</label>
+    <input type="PhoneNumber" class="form-control" id="customerNumberOfBedrooms" placeholder="Your Number-Of-Bedrooms" required>
+</div>
+<div class="form-group col-md-6">
+    <label for="customerMoveFromAddress">Move From Address</label>
+    <input type="Address" class="form-control" id="customerMoveFromAddress" placeholder="Your Address" required>
+</div>
+<div class="form-group col-md-6">
+    <label for="customerMoveToAddress">Move to Address</label>
+    <input type="Address" class="form-control" id="customerMoveToAddress" placeholder="Your Address" required>
+</div>
+
+<div class="form-group col-md-6">
+    <label for="customerServiceRequired">Service Required</label>
+    <select id="customerServiceRequired" class="form-control">
+        <option selected>Choose...</option>
+        <option>Residential Moving</option>
+        <option>Commercial Moving</option>
+        <option>Packing Services</option>
+        <option>Storage Solutions</option>
+    </select>
+</div>
+
+                <div class="form-group">
+                    <label for="customerMessage">Message</label>
+                    <textarea class="form-control" id="customerMessage" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    
+        <script>
+            function submitForm() {
+                // Get form values
+                var name = document.getElementById('customerName').value;
+                var email = document.getElementById('customerEmail').value;
+                var PhoneNumber = document.getElementById('customerPhoneNumber').value;
+                var MoveDate = document.getElementById('customerMoveDate').value;
+                var NumberOfBedrooms = document.getElementById('customerNumberOfBedrooms').value;
+                var MoveFromAddress = document.getElementById('customerMoveFromAddress').value;
+                var MoveToAddress = document.getElementById('customerMoveToAddress').value;
+                var ServiceRequired = document.getElementById('customerServiceRequired').value;
+                var message = document.getElementById('customerMessage').value;
+    
+                // Construct the mailto link
+                var mailtoLink = 'mailto:ediwabs@ediwabsmovers.com' +
+                                 '?subject=' + encodeURIComponent('Move Request from ' + name) +
+                                 '&body=' + encodeURIComponent('Name: ' + name + '\n' +
+                                                               'Email: ' + email + '\n' +
+                                                               'Phone-Number: ' + PhoneNumber + '\n' +
+                                                               'Move Date: ' + MoveDate + '\n' +
+                                                               'Number of Bedroom: ' + NumberOfBedrooms + '\n' +
+                                                               'Move From Address: ' + MoveFromAddress + '\n' +
+                                                               'Move To Address: ' + MoveToAddress + '\n' +
+                                                               'Service Required: ' + ServiceRequired + '\n' +
+                                                               'Message: ' + message);
+    
+                // Open the user's email client with the pre-filled email
+                window.location.href = mailtoLink;
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
 
         <!-- Services Section -->
         <section id="services" class="section services-section">
@@ -298,12 +344,39 @@
 
 
     <!-- Customer Support Chat Button -->
-    <div class="customer-support">
+<div class="customer-support">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#supportModal">
+        <i class="fas fa-comments"></i> Support
+    </button>
+</div>
 
-        <button type="button" class="btn btn-primary" onclick="window.location.href='sms:+18323851459'">
-            Support
-        </button>    
+<!-- Support Modal -->
+<div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="supportModalLabel">Text Us for Support</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="supportForm" action="mailto:ediwabs@ediwabsmovers.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="supportName">Your Name</label>
+                        <input type="text" class="form-control" id="supportName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="supportMessage">Your Message</label>
+                        <textarea class="form-control" id="supportMessage" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
     </div>
+</div>
+
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
