@@ -2,10 +2,48 @@
 <html lang="en">
 
 <head>
+
+ <!-- Meta Description -->
+ <meta name="description" content="Looking for reliable movers in Houston, Harris County, or surrounding areas? Our moving company provides top-rated moving services in Texas. Call us today!">
+ <!-- Keywords -->
+ <meta name="keywords" content="movers, moving company, Houston movers, Harris County movers, Texas movers, moving services, local moving, residential movers, commercial movers">
+ <!-- Open Graph Tags -->
+ <meta property="og:title" content="Top Movers in Houston, Harris County | Best Moving Services">
+ <meta property="og:description" content="Searching for trusted movers in Houston or surrounding areas? We provide expert local and long-distance moving services.">
+ <meta property="og:image" content="black.jpg">
+ <meta property="og:url" content="https://ediwabsmovers.com">
+ <meta property="og:type" content="website">
+ <!-- Structured Data -->
+ <script type="application/ld+json">
+ {
+     "@context": "https://schema.org",
+     "@type": "MovingCompany",
+     "name": "Houston's Best Movers",
+     "url": "https://yourwebsite.com",
+     "logo": "https://yourwebsite.com/logo.jpg",
+     "description": "Top-rated moving company in Houston, Harris County, and surrounding areas. We offer residential, commercial, and long-distance moving services.",
+     "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "1234 Moving St.",
+         "addressLocality": "Houston",
+         "addressRegion": "TX",
+         "postalCode": "77002",
+         "addressCountry": "US"
+     },
+     "contactPoint": {
+         "@type": "ContactPoint",
+         "telephone": "+1-555-555-5555",
+         "contactType": "Customer Service"
+     },
+     "areaServed": ["Houston", "Harris County", "Texas"],
+     "sameAs": ["https://www.facebook.com/ediwabsmovers", "https://twitter.com/ediwabsmovers"]
+ }
+ </script>
+
+
     <!-- Essential Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ediwabs Movers - Reliable Moving Services</title>
+    
+    <title>Ediwabs Movers - Reliable Moving Services in Houston, Harris county and surrounding counties</title>
     <meta name="description" content="Ediwabs Movers offers reliable moving services in Houston, TX. Contact us for residential, commercial, and specialty moving services.">
     <meta name="keywords" content="Houston Movers, Moving Services, Residential Moving, Commercial Moving, Houston, TX">
     <meta name="author" content="Houston Movers">
@@ -24,7 +62,7 @@
     <meta name="twitter:image" content="assets/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" href="./logo.PNG" type="image/x-icon">
+    <link rel="icon" href="./black.JPG" type="image/x-icon">
 
 
     <!-- Bootstrap CSS -->
@@ -48,8 +86,8 @@
 
     <!-- Top Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="https://www.ediwabsmovers.com">
-            <img src="./comp-logo.PNG" alt="Ediwabs Movers" class="logo-img"> Ediwabs Movers
+        <a class="navbar-brand" href="https://www.ediwabsmovers.com" >
+            <img src="./black.JPG" alt="Ediwabs Movers" class="logo-img"> Ediwabs Movers
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavBar" aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -71,9 +109,9 @@
                 </li>
 
 
-               <!-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">CONTACT</a>
-                </li>  -->
+                </li>  
 
 
                 <li class="nav-item">
@@ -99,9 +137,9 @@
                 <a class="nav-link" href="#gallery"><i class="fas fa-image"></i> GALLERY</a>
             </li>
 
-          <!--  <li class="nav-item">
-                <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> CONTACT</a>
-            </li>  -->
+           <li class="nav-item">
+               <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> CONTACT</a>
+            </li>  
 
 
         </ul>
@@ -112,121 +150,96 @@
         <!-- Home Section -->
         <section id="home" class="section home-section">
             <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                <h1 class="display-6" style="color: whitesmoke;" >Ediwabs Movers</h1>
+                <p class="lead" style="color: whitesmoke;">Your trusted partner for a seamless moving experience in Houston-Texas and surrounding counties. We offer out-of-State move also.</p>
+                <br>
+                <p style="color: whitesmoke;">Contact us today for a <strong>free moving estimate </strong> in the Houston area!</p>
+                </div>
 
-                <h1 class="display-4" class="glow" class="grid-item">Ediwabs Movers</h1>
-                <p class="lead">Your trusted partner for a seamless moving experience.</p>
-                <button type="button"  class="glow" class="grid-item" class="btn btn-info" >  <h2> <a href="#quote">Request a QUOTE</a></h2></button>
-  
+                    <div class="col-md-4">
+                        <img src="black.JPG" class="rounded-circle"  alt="company logo" width="304" height="236">
+                    </div>
             </div>
-        
         </section>
 
-
-
-        
-<!-- Request a Quote Section -->
-        <div class="container mt-5">
+<!--Request a Quote top button-->
+    
+        <div class="container">
             
-            <form id="supportForm" onsubmit="submitForm(); return false;">
-                <div class="form-group col-md-6">
-                    <label for="customerName">Name</label>
-                    <input type="text" class="form-control" id="customerName" placeholder="Your Name" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="customerEmail">Email</label>
-                    <input type="email" class="form-control" id="customerEmail" placeholder="Your Email" required>
-                </div>
-
-
-     <div class="form-group col-md-6">
-    <label for="customerPhoneNumber">phone-number</label>
-    <input type="phone-number" class="form-control" id="customerPhoneNumber" placeholder="Your phone-number" required>
-</div>
-<div class="form-group col-md-6">
-    <label for="customerMoveDate">Move Date</label>
-    <input type="Move-Date" class="form-control" id="customerMoveDate" placeholder="Your Date" required>
-</div>
-<div class="form-group col-md-6">
-    <label for="customerNumberOfBedrooms">Number of Bedrooms</label>
-    <input type="PhoneNumber" class="form-control" id="customerNumberOfBedrooms" placeholder="Your Number-Of-Bedrooms" required>
-</div>
-<div class="form-group col-md-6">
-    <label for="customerMoveFromAddress">Move From Address</label>
-    <input type="Address" class="form-control" id="customerMoveFromAddress" placeholder="Your Address" required>
-</div>
-<div class="form-group col-md-6">
-    <label for="customerMoveToAddress">Move to Address</label>
-    <input type="Address" class="form-control" id="customerMoveToAddress" placeholder="Your Address" required>
-</div>
-
-<div class="form-group col-md-6">
-    <label for="customerServiceRequired">Service Required</label>
-    <select id="customerServiceRequired" class="form-control">
-        <option selected>Choose...</option>
-        <option>Residential Moving</option>
-        <option>Commercial Moving</option>
-        <option>Packing Services</option>
-        <option>Storage Solutions</option>
-    </select>
-</div>
-
-                <div class="form-group">
-                    <label for="customerMessage">Message</label>
-                    <textarea class="form-control" id="customerMessage" rows="5" placeholder="Enter your message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                    
+        <section>
+                <div>
+                <a href="#quote" class="btn btn-primary btn-lg">Request a Quote</a>
+                </div>    
+        </section>
         </div>
     
-        <script>
-            function submitForm() {
-                // Get form values
-                var name = document.getElementById('customerName').value;
-                var email = document.getElementById('customerEmail').value;
-                var PhoneNumber = document.getElementById('customerPhoneNumber').value;
-                var MoveDate = document.getElementById('customerMoveDate').value;
-                var NumberOfBedrooms = document.getElementById('customerNumberOfBedrooms').value;
-                var MoveFromAddress = document.getElementById('customerMoveFromAddress').value;
-                var MoveToAddress = document.getElementById('customerMoveToAddress').value;
-                var ServiceRequired = document.getElementById('customerServiceRequired').value;
-                var message = document.getElementById('customerMessage').value;
-    
-                // Construct the mailto link
-                var mailtoLink = 'mailto:ediwabs@ediwabsmovers.com' +
-                                 '?subject=' + encodeURIComponent('Move Request from ' + name) +
-                                 '&body=' + encodeURIComponent('Name: ' + name + '\n' +
-                                                               'Email: ' + email + '\n' +
-                                                               'Phone-Number: ' + PhoneNumber + '\n' +
-                                                               'Move Date: ' + MoveDate + '\n' +
-                                                               'Number of Bedroom: ' + NumberOfBedrooms + '\n' +
-                                                               'Move From Address: ' + MoveFromAddress + '\n' +
-                                                               'Move To Address: ' + MoveToAddress + '\n' +
-                                                               'Service Required: ' + ServiceRequired + '\n' +
-                                                               'Message: ' + message);
-    
-                // Open the user's email client with the pre-filled email
-                window.location.href = mailtoLink;
-            }
-        </script>
 
-
-
-
-
-
-
-
-
-
+        <!-- Request a Quote Section -->
         
+            <div class="container">    
+        <section id="quote" class="section quote-section bg-light">
+            <div class="container">
+            <button   class="glow" class="grid-item" >  <strong>15% Discount</strong></button>
+            
+                <form id="quoteForm" action="mailto:ediwabs@ediwabsmovers.com" method="POST" enctype="text/plain">
+                    
 
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Full Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputNEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email" required>
+                        </div>
 
-        
+                    <div class="form-group col-md-6">
+                        <label for="inputPhoneNumber">phone-number</label>
+                        <input type="phone-number" class="form-control" id="inputPhoneNumber" placeholder="Your phone-number" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputDate">Move Date</label>
+                        <input type="Move-Date" class="form-control" id="inputDate" placeholder="Your Date" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputNumber">Number of Bedrooms</label>
+                        <input type="PhoneNumber" class="form-control" id="inputPhoneNumber" placeholder="Your Number" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">Move From Address</label>
+                        <input type="Address" class="form-control" id="inputAddress" placeholder="Your Address" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">Move to Address</label>
+                        <input type="Address" class="form-control" id="inputAddress" placeholder="Your Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputService">Service Required</label>
+                        <select id="inputService" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Residential Moving</option>
+                            <option>Commercial Moving</option>
+                            <option>Packing Services</option>
+                            <option>Storage Solutions</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDetails">Additional Details</label>
+                        <textarea class="form-control" id="inputDetails" rows="5" placeholder="Any specific details?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+                </form>
+            </div>
+        </section>
 
         <!-- Services Section -->
         <section id="services" class="section services-section">
             <div class="container">
-                <h2 class="section-title">Our Services</h2>
+                <h2 class="section-title" style="color: whitesmoke;">Our Services</h2>
                 <div class="row">
                     <!-- Service 1 -->
                     <div class="col-md-4">
@@ -262,18 +275,19 @@
             </div>
         </section>
 
-        <!-- Maps and Directions Section 
-        <section id="maps" class="section maps-section bg-light">
-            <div class="container">
-                <h2 class="section-title">Maps & Directions</h2>
-                <div id="map" style="height: 400px;"></div>
-            </div>
-        </section>   -->
+
+
+    
+     <!--<h3 style="color: whitesmoke;">Google Map</h3>-->
+        <!-- The div element for the map -->
+        <!--<div id="map"></div>-->
+    
+        
 
         <!-- About Section -->
-        <section id="about" class="section about-section">
+        <section id="about" class="section about-section" style="color: whitesmoke;">
             <div class="container">
-                <h2 class="section-title">About Us</h2>
+                <h2 class="section-title" >About Us</h2>
                 <p>Ediwabs Movers has been a trusted name in the moving industry for over 5 years, providing top-notch services to residents and businesses across Houston, TX.</p>
                 <p>We are a family business that started operation when we barely had any reliable truck, but with persistence and planning, we have been able to undertake every 
                 busniess with meticulous approach and this humble attitude towards undertaking our services deligently has garnered us a rich array of customers over the 
@@ -281,6 +295,32 @@
                 undertakings, we have satisfied every customer we served. We look forward to serving you with the utmost care of your properties and to ensure we relocate </p>
                 <p>them from one place to the desired destination just the same way we met it from the start, wihtout any damage whatsoever.</p>
             </div>
+        </section>
+
+        <section style="color: whitesmoke;">
+            <h2>Why Choose Us as Your Movers in Houston?</h2>
+            <p>Our moving company has been serving the residents and businesses of Houston, Harris County, and nearby cities for over 10 years. Whether you need residential or commercial moving services, we have the experience and expertise to handle all your moving needs efficiently.</p>
+            <h3>Our Moving Services Include:</h3>
+            <ul>
+                <li>Local Moving in Houston and Harris County</li>
+                <li>Long-Distance Moving Services Across Texas</li>
+                <li>Residential and Commercial Moving</li>
+                <li>Packing and Unpacking Services</li>
+                <li>Specialty Item Moving (Pianos, Antiques, etc.)</li>
+            </ul>
+            <p>Contact us today for a <strong>free moving estimate</strong> in the Houston area!</p>
+        </section>
+
+        <section style="color: whitesmoke;">
+            <h2>Service Areas</h2>
+            <p>We proudly serve Houston, Harris County, and the following nearby cities:</p>
+            <ul>
+                <li>Katy</li>
+                <li>Sugar Land</li>
+                <li>The Woodlands</li>
+                <li>Pearland</li>
+                <li>Pasadena</li>
+            </ul>
         </section>
 
         <!-- Gallery Section -->
@@ -301,39 +341,36 @@
             </div>
         </section>
 
-        <!-- Contact Section 
-        <section id="contact" class="section contact-section">
+        <!--Contact Section-->
+        <section id="contact" class="section contact-section bg-light">
             <div class="container">
                 <h2 class="section-title">Contact Us</h2>
-                <form id="contactForm" action="mailto:info@houstonmovers.com" method="POST" enctype="text/plain">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputName">Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email" required>
-                        </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="Flyer.JPG" class="img-fluid" alt="company Flyer">
                     </div>
-                    <div class="form-group">
-                        <label for="inputMessage">Message</label>
-                        <textarea class="form-control" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                    <div class="col-md-6">
+                        <img src="black.JPG" class="img-fluid" alt="company logo">
+                   </div>
+                </div>
+            </div>
+        </section>   
+                
+
+
             </div>
         </section>
-    </div>  -->
+    
 
     <!-- Footer -->
     <footer class="footer bg-dark text-white">
         <div class="container text-center">
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://www.facebook.com/houstonmovers" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.twitter.com/houstonmovers" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.instagram.com/houstonmovers" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/houstonmovers" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/ediwabsmovers" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.twitter.com/ediwabsmovers" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/ediwabsmovers" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/ediwabsmovers" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
             <p>&copy; 2024 Houston Movers. All Rights Reserved.</p>
         </div>
@@ -344,39 +381,12 @@
 
 
     <!-- Customer Support Chat Button -->
-<div class="customer-support">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#supportModal">
-        <i class="fas fa-comments"></i> Support
-    </button>
-</div>
+    <div class="customer-support">
 
-<!-- Support Modal -->
-<div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="supportModalLabel">Text Us for Support</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="supportForm" action="mailto:ediwabs@ediwabsmovers.com" method="POST" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="supportName">Your Name</label>
-                        <input type="text" class="form-control" id="supportName" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="supportMessage">Your Message</label>
-                        <textarea class="form-control" id="supportMessage" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='sms:+18323851459'">
+            Support
+        </button>    
     </div>
-</div>
-
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -394,21 +404,36 @@
         $(document).ready(function() {
             $('#accessibility-menu').accessibilityMenu();
         });
-
-        // Initialize Google Maps (Replace 'YOUR_API_KEY' with your actual Google Maps API key)
-        function initMap() {
-            var location = { lat: 29.7604, lng: -95.3698 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+
+
+
+<!--Below are the two Google Map scripts...Don't mess with them
+<script>
+    function initMap() {
+        // The location to display on the map (Latitude, Longitude)
+        const location = { lat: 40.7128, lng: -74.0060 }; // Example: New York City
+
+        // Create a map centered at the location
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 12,
+            center: location,
+        });
+
+        // Add a marker at the location
+        const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+        });
+    }
+</script>
+
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO6x54S5kLN94kxzAIS6O_FDOADqD0ysE&callback=initMap">
+</script>
+ -->
+
 </body>
 
 </html>

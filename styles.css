@@ -110,7 +110,7 @@
       }
 
 
-      .img-eye {background-image: url(https://media.istockphoto.com/id/1847548352/photo/pink-blue-clouds-at-sunset-cloudy-air-flying-in-the-sky-landscape-sky-at-dawn-3d-render.webp?b=1&s=612x612&w=0&k=20&c=WHX-mkAtqbfLek0jtoHbi34eE_VobM3DMb4WUedcoNM=); height: 800px; 
+      .img-eye {background-image: url(color.PNG); height: 800px; 
         position: relative;
         background-position: center;
         background-repeat: no repeat;
@@ -118,6 +118,34 @@
     }
 
 
+/* Customer Support Button */
+.customer-support {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.customer-support .btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-header .close {
+    color: white;
+}
+
+
+
+/* Set the size of the map */
+#map {
+    height: 400px;
+    width: 100%;
+}
 
 
 
