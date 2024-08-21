@@ -168,49 +168,49 @@
         </div>
     
 
-        <!-- Request a Quote Section -->
-        
-            <div class="container">    
-        <section id="quote" class="section quote-section bg-light">
+        <!-- Request a Quote Section button -->
             <div class="container">
             <button   class="glow" class="grid-item" >  <h5>15% Discount</h5></button>
-            
-                <form id="quoteForm" action="mailto:ediwabs@ediwabsmovers.com" method="POST" enctype="text/plain">
+            </div>
+
+        <!-- Request a Quote Section form-->
+       <div class="container mt-6" style="color: aliceblue;">
+
+                   <form id="supportForm" onsubmit="submitForm(); return false;">
+                    <div class="form-group col-md-6">
+                        <label for="customerName">Name</label>
+                        <input type="text" class="form-control" id="customerName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                       <label for="customerEmail">Email</label>
+                       <input type="email" class="form-control" id="customerEmail" placeholder="Your Email" required>
+                    </div>
+
+
+                    <div class="form-group col-md-6">
+                        <label for="customerPhoneNumber">phone-number</label>
+                        <input type="phone-number" class="form-control" id="customerPhoneNumber" placeholder="Your phone-number" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="customerMoveDate">Move Date</label>
+                        <input type="Move-Date" class="form-control" id="customerMoveDate" placeholder="Your Date" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="customerNumberOfBedrooms">Number of Bedrooms</label>
+                        <input type="PhoneNumber" class="form-control" id="customerNumberOfBedrooms" placeholder="Your Number-Of-Bedrooms" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="customerMoveFromAddress">Move From Address</label>
+                        <input type="Address" class="form-control" id="customerMoveFromAddress" placeholder="Your Address" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="customerMoveToAddress">Move to Address</label>
+                        <input type="Address" class="form-control" id="customerMoveToAddress" placeholder="Your Address" required>
+                    </div>
                     
-
-                        <div class="form-group col-md-6">
-                            <label for="inputName">Full Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputNEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email" required>
-                        </div>
-
                     <div class="form-group col-md-6">
-                        <label for="inputPhoneNumber">phone-number</label>
-                        <input type="phone-number" class="form-control" id="inputPhoneNumber" placeholder="Your phone-number" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputDate">Move Date</label>
-                        <input type="Move-Date" class="form-control" id="inputDate" placeholder="Your Date" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputNumber">Number of Bedrooms</label>
-                        <input type="PhoneNumber" class="form-control" id="inputPhoneNumber" placeholder="Your Number" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputAddress">Move From Address</label>
-                        <input type="Address" class="form-control" id="inputAddress" placeholder="Your Address" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputAddress">Move to Address</label>
-                        <input type="Address" class="form-control" id="inputAddress" placeholder="Your Address" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="inputService">Service Required</label>
-                        <select id="inputService" class="form-control">
+                        <label for="customerServiceRequired">Service Required</label>
+                        <select id="customerServiceRequired" class="form-control">
                             <option selected>Choose...</option>
                             <option>Residential Moving</option>
                             <option>Commercial Moving</option>
@@ -218,14 +218,85 @@
                             <option>Storage Solutions</option>
                         </select>
                     </div>
+              
+                          <div class="form-group">
+                    <label for="customerMessage">Message</label>
+                    <textarea class="form-control" id="customerMessage" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Quote Request </button>
+            </form>
+        </div>
+      
+
+    <script>
+        function submitForm() {
+            // Get form values
+            var name = document.getElementById('customerName').value;
+            var email = document.getElementById('customerEmail').value;
+            var PhoneNumber = document.getElementById('customerPhoneNumber').value;
+            var MoveDate = document.getElementById('customerMoveDate').value;
+            var NumberOfBedrooms = document.getElementById('customerNumberOfBedrooms').value;
+            var MoveFromAddress = document.getElementById('customerMoveFromAddress').value;
+            var MoveToAddress = document.getElementById('customerMoveToAddress').value;
+            var ServiceRequired = document.getElementById('customerServiceRequired').value;
+            var message = document.getElementById('customerMessage').value;
+
+            // Construct the mailto link
+            var mailtoLink = 'mailto:ediwabs@ediwabsmovers.com' +
+                             '?subject=' + encodeURIComponent('Move Request from ' + name) +
+                             '&body=' + encodeURIComponent('Name: ' + name + '\n' +
+                                                           'Email: ' + email + '\n' +
+                                                           'Phone-Number: ' + PhoneNumber + '\n' +
+                                                           'Move Date: ' + MoveDate + '\n' +
+                                                           'Number of Bedroom: ' + NumberOfBedrooms + '\n' +
+                                                           'Move From Address: ' + MoveFromAddress + '\n' +
+                                                           'Move To Address: ' + MoveToAddress + '\n' +
+                                                           'Service Required: ' + ServiceRequired + '\n' +
+                                                           'Message: ' + message);
+
+            // Open the user's email client with the pre-filled email
+            window.location.href = mailtoLink;
+        }
+    </script>
+
+
+         
+
+ <!-- Customer Support Chat Button -->
+ <div class="customer-support">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#supportModal">
+        <i class="fas fa-comments"></i> Support
+    </button>
+</div>
+
+<!-- Support Modal -->
+<div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="supportModalLabel">Text Us for Support</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="supportForm" action="mailto:ediwabs@ediwabsmovers.com" method="POST" enctype="text/plain">
                     <div class="form-group">
-                        <label for="inputDetails">Additional Details</label>
-                        <textarea class="form-control" id="inputDetails" rows="5" placeholder="Any specific details?" required></textarea>
+                        <label for="supportName">Your Name</label>
+                        <input type="text" class="form-control" id="supportName" name="name" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+                    <div class="form-group">
+                        <label for="supportMessage">Your Message</label>
+                        <textarea class="form-control" id="supportMessage" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
-        </section>
+        </div>
+    </div>
+</div>
+
+
 
         <!-- Services Section -->
         <section id="services" class="section services-section">
@@ -287,6 +358,8 @@
                 <p>them from one place to the desired destination just the same way we met it from the start, wihtout any damage whatsoever.</p>
             </div>
         </section>
+
+        <div class="container">
         <section style="color: whitesmoke;">
             <h2>Why Choose Us as Your Movers in Houston?</h2>
             <p>Our moving company has been serving the residents and businesses of Houston, Harris County, and nearby cities for over 5 years. Whether you need residential or commercial moving services, we have the experience and expertise to handle all your moving needs efficiently.</p>
@@ -346,15 +419,15 @@
             </div>
         </section>   
     
-
+    
     <!-- Footer -->
     <footer class="footer bg-dark text-white">
         <div class="container text-center">
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://www.facebook.com/ediwabsmovers" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.twitter.com/houstonmovers" target="_blank"><i class="fab fa-twitter"></i></a></li>
                 <li class="list-inline-item"><a href="https://www.instagram.com/ediwabsmovers" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/ediwabsmovers" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
             <p>&copy; 2024 Houston Movers. All Rights Reserved.</p>
         </div>
@@ -362,15 +435,9 @@
 
      <!-- Back to Top Button -->
      <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+</div>
 
 
-    <!-- Customer Support Chat Button -->
-    <div class="customer-support">
-
-        <button type="button" class="btn btn-primary" onclick="window.location.href='sms:+18323851459'">
-            Support
-        </button>    
-    </div>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
