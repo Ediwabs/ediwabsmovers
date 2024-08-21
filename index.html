@@ -265,39 +265,7 @@
 
          
 
- <!-- Customer Support Chat Button -->
- <div class="customer-support">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#supportModal">
-        <i class="fas fa-comments"></i> Support
-    </button>
-</div>
-
-<!-- Support Modal -->
-<div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="supportModalLabel">Text Us for Support</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="supportForm" action="mailto:ediwabs@ediwabsmovers.com" method="POST" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="supportName">Your Name</label>
-                        <input type="text" class="form-control" id="supportName" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="supportMessage">Your Message</label>
-                        <textarea class="form-control" id="supportMessage" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+ 
 
 
 
@@ -486,6 +454,43 @@
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO6x54S5kLN94kxzAIS6O_FDOADqD0ysE&callback=initMap">
 </script>
 -->
+
+<!-- Customer Support Chat Button -->
+
+<div class="container">
+<div class="customer-support">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#supportModal">
+        <i class="fas fa-comments"></i> Support
+    </button>
+</div>
+
+<!-- Support Modal -->
+<div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="supportModalLabel">Message us Support</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="supportForm" action="mailto:ediwabs@ediwabsmovers.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="supportName">Your Name</label>
+                        <input type="text" class="form-control" id="supportName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="supportMessage">Your Message</label>
+                        <textarea class="form-control" id="supportMessage" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 </div>
 </body>
 
